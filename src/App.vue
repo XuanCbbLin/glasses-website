@@ -1,11 +1,11 @@
 <template>
-  <Header></Header>
-  <Banner></Banner>
+  <Header />
+  <Banner />
+  <Service />
+  <Classic />
+  <JointDesign />
 </template>
 
-<script setup>
-import Header from "./components/Header.vue";
-import Banner from "./components/Banner.vue";
-</script>
+<script setup></script>
 
 <style scoped></style>
