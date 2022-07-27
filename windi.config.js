@@ -1,4 +1,5 @@
 import { defineConfig } from "windicss/helpers";
+import colors from "windicss/colors";
 
 export default defineConfig({
   theme: {
@@ -6,6 +7,7 @@ export default defineConfig({
       desktop: "1200px",
     },
     colors: {
+      ...colors,
       "c-red-500": "#AA0601",
       "c-red-700": "#650300",
       "c-pink-500": "#FBF2F2",
