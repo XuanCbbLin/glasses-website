@@ -1,7 +1,7 @@
 <template>
-  <header class="bg-c-red-500">
-    <div class="container">
-      <div class="flex">
+  <header class="bg-c-red-500 relative">
+    <div class="container py-4 px-[0.9375rem]">
+      <div class="flex items-center">
         <h1 class="text-[0rem]">
           眼鏡
           <a href="#">
@@ -12,11 +12,15 @@
           </a>
         </h1>
 
-        <i-charm-menu-hamburger class="text-white" />
+        <i-charm-menu-hamburger
+          class="text-white cursor-pointer text-2xl ml-auto md:hidden"
+        />
 
-        <ul>
+        <ul
+          class="absolute top-full left-0 bg-c-red-500 h-[100vh] w-[70%] hidden"
+        >
           <li v-for="nav in navList" :key="nav">
-            <a href="#" class="text-white">
+            <a href="#" class="inline-block py-8 pl-3 text-white">
               {{ nav }}
             </a>
           </li>
