@@ -3,8 +3,25 @@ import colors from "windicss/colors";
 
 export default defineConfig({
   theme: {
+    extend: {
+      backgroundImage: () => ({
+        banner: "url('./src/assets/images/home-header-sm.png')",
+      }),
+    },
     screens: {
-      desktop: "1200px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1320px",
+      "2xl": "1320px",
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        md: "36px",
+        lg: "12px",
+      },
     },
     colors: {
       ...colors,
