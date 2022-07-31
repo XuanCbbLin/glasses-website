@@ -4,6 +4,7 @@
   <Service />
   <Classic />
   <JointDesign />
+  <Recommend />
 </template>
 
 <script setup></script>

@@ -19,10 +19,17 @@
         <ul
           class="absolute top-full left-0 bg-c-red-500 h-[100vh] w-[70%] hidden"
         >
-          <li v-for="nav in navList" :key="nav">
-            <a href="#" class="inline-block py-8 pl-3 text-white">
-              {{ nav }}
-            </a>
+          <li>
+            <a href="#" class="inline-block py-8 pl-3 text-white"> 系列鏡框 </a>
+          </li>
+          <li>
+            <a href="#" class="inline-block py-8 pl-3 text-white"> 門市據點 </a>
+          </li>
+          <li>
+            <a href="#" class="inline-block py-8 pl-3 text-white"> 部落格 </a>
+          </li>
+          <li>
+            <a href="#" class="inline-block py-8 pl-3 text-white"> 常見問題 </a>
           </li>
         </ul>
       </div>
@@ -30,8 +37,6 @@
   </header>
 </template>
 
-<script setup>
-const navList = ["系列鏡框", "門市據點", "部落格", "常見問題"];
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>
